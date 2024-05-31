@@ -1,0 +1,170 @@
+p {
+  font-size: 1rem;
+  color: var(--color-offwhite);
+}
+
+/* ================== Register Form ============== */
+.register {
+  position: relative;
+  top: 7.1rem;
+  padding: 7.1rem 0;
+  height: auto;
+  margin-bottom: 7.1rem;
+}
+
+.register_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register_body {
+  width: 40rem;
+}
+
+.register_form {
+  background: linear-gradient(
+    100deg,
+    #2020207e,
+    #23232481,
+    #5a5a5a00,
+    #2928287a,
+    #1f1e1e77
+  );
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
+  border-radius: 1.2rem;
+  padding: 3rem;
+  transition: var(--transition);
+}
+
+.register_form h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #0017b1 0%, #00dae3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 0.6rem;
+  /* color: var(--color-primary); */
+}
+
+.register_form .input_control {
+  display: flex;
+  flex-direction: column;
+}
+
+.register_form .input_control .error {
+  color: #ff0000;
+  font-size: 13px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.register_form form input:not([type="checkbox"]) {
+  width: 100%;
+  font-size: 1rem;
+  color: var(--color-white);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  border: 1px solid transparent;
+  outline: none;
+  background: #2929294d;
+  transition: var(--transition);
+}
+
+.register_form form input:nth-child(4) {
+  margin-bottom: 1rem;
+}
+
+.register_form form input:not([type="checkbox"]):focus {
+  border: 1px solid var(--color-primary);
+  transition: border-radius 0.3s ease;
+}
+
+.terms_conditions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+  margin-bottom: 1.8rem;
+}
+
+.terms_conditions #checkbox {
+  cursor: pointer;
+}
+
+.terms_conditions label {
+  font-size: 0.82rem;
+}
+
+.terms_conditions a {
+  background: linear-gradient(136.85deg, #ff37f2 -15.82%, #405aff 99.57%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 0.3rem;
+  border-bottom: 1px solid #405aff;
+}
+
+.if_account p {
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+}
+
+.if_account p a {
+  font-size: 0.9rem;
+  color: var(--color-primary);
+}
+
+/* ============ Device max width 1024px ================== */
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: var(--container-width-lg);
+    margin: 0 auto;
+  }
+
+  .register {
+    top: 0rem;
+    padding: 4rem 0;
+    margin-bottom: 0rem;
+  }
+
+  .register_form {
+    border-radius: 1rem;
+    padding: 3rem;
+  }
+
+  .btn_primary {
+    font-size: 1rem;
+    padding: 0.75rem 4rem;
+  }
+}
+
+/* ============= Media Query for Tablet Device ================ */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: var(--container-width-md);
+    margin: 0 auto;
+  }
+
+  .register_form {
+    padding: 2rem;
+  }
+}
+
+/* ============= Media Query for Tablet Device ================ */
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: var(--container-width-sm);
+    margin: 0 auto;
+  }
+
+  .register_form {
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+}
